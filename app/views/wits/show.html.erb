@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<%= @wit.message %>
+created <%= time_ago_in_words(@wit.created_at)  %> ago
+
+<%= link_to 'Edit', edit_wit_path(@wit) %> |
+<%= link_to 'Back', wits_path %>

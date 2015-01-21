@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<%= @user.screen_name %>
+created <%= time_ago_in_words(@user.created_at)  %> ago
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
